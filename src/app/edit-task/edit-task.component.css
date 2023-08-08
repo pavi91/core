@@ -1,0 +1,56 @@
+.edit-task {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .edit-task h2 {
+    text-align: center;
+  }
+  
+  .edit-task form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-task form div {
+    margin-bottom: 15px;
+  }
+  
+  .edit-task form label {
+    font-weight: bold;
+  }
+  
+  .edit-task form input[type="text"],
+  .edit-task form textarea,
+  .edit-task form input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .edit-task form textarea {
+    height: 80px;
+  }
+  
+  .edit-task form input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .edit-task form button[type="submit"] {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-task form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

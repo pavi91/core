@@ -1,0 +1,17 @@
+<div class="task-list">
+    <h2>Task List</h2>
+    <div class="task-item" *ngFor="let task of tasks">
+      <div class="task-title">{{ task.title }}</div>
+      <div class="task-description">{{ task.description }}</div>
+      <div class="task-due-date">Due Date: {{ task.dueDate | date }}</div>
+      <div class="task-status">
+        <input type="checkbox" [checked]="task.completed" (change)="toggleTaskCompletion(task)" />
+        <label>Completed</label>
+      </div>
+      <div class="task-actions">
+        <button (click)="editTask(task)">Edit</button>
+        <button (click)="deleteTask(task)">Delete</button>
+      </div>
+    </div>
+  </div>
+  
